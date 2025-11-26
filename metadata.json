@@ -1,0 +1,5 @@
+{
+  "name": "EraseBox",
+  "description": "A pixel-art puzzle platformer. Place blocks to create paths or erase obstacles by matching 4 in a row.",
+  "requestFramePermissions": []
+}
