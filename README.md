@@ -37,12 +37,18 @@
 *   **AI 服务**: [Google Gemini API](https://ai.google.dev/) (@google/genai)
 *   **构建工具**: Vite
 
+## 🌐 在线体验
+
+🎮 **[立即游玩](https://huckhuck12.github.io/erase_box/)** - 无需安装，打开即玩！
+
 ## 🚀 快速开始
+
+### 本地开发
 
 1.  **克隆项目**
     ```bash
-    git clone https://github.com/your-username/erasebox.git
-    cd erasebox
+    git clone https://github.com/huckhuck12/erase_box.git
+    cd erase_box
     ```
 
 2.  **安装依赖**
@@ -53,18 +59,31 @@
 3.  **配置环境变量**
     在项目根目录创建 `.env` 文件（可选，用于 AI 功能）：
     ```env
-    API_KEY=your_google_gemini_api_key
+    GEMINI_API_KEY=your_google_gemini_api_key
     ```
 
 4.  **启动开发服务器**
     ```bash
     npm run dev
     ```
+    访问 `http://localhost:3000` 开始游戏
 
 5.  **构建生产版本**
     ```bash
     npm run build
     ```
+
+### 部署说明
+
+本项目已配置 GitHub Actions 自动部署流程。每次推送到 `main` 分支时，会自动：
+- ✅ 安装依赖
+- ✅ 构建项目
+- ✅ 部署到 GitHub Pages
+
+**配置步骤**：
+1. 在仓库设置中启用 GitHub Pages（Source 选择 GitHub Actions）
+2. 添加 Repository Secret：`GEMINI_API_KEY`（可选，用于 AI 功能）
+3. 推送代码后在 Actions 页面查看部署状态
 
 ## 🧩 关卡设计
 
